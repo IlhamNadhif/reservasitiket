@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<!--	<link rel="stylesheet" href="style.css">-->
-	<title>TIKET</title>
-	<style>
+    <head>
+        <meta charset="utf-8">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        >
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Courgette&display=swap" rel="stylesheet">
+        <!--	<link rel="stylesheet" href="style.css">-->
+        <title>TIKET</title>
+        <style>
 		.wrapper{
 			position: relative;
 			width: 477px;
@@ -21,10 +34,10 @@
 			position: absolute;
 			right: 0;
 
-			font-family: Roboto;
+			font-family: Squada One;
 			font-style: normal;
 			font-weight: 500;
-			font-size: 24px;
+			font-size: 3rem;
 			line-height: 28px;
 			color: #FBB904;
 		}
@@ -33,6 +46,15 @@
 			padding: 4px 15px;
 			background: #20B2AA;
 			color: #fff;
+			font-weight: normal;
+		}
+
+		.tcc{	
+			font-family: Bungee Inline;
+		}
+
+		.isi{
+			font-weight: normal;
 		}
 
 		.box{
@@ -41,12 +63,20 @@
 		}
 
 		.box h4{
-			font-family: Roboto;
+			font-family: Squada One;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 18px;
+			font-size: 2rem;
+			height: 3rem;
+			text-align: center;
 			line-height: 21px;
 			color: #242424;
+		}
+
+		.pesan{
+			margin-top: 20px;
+			font-family: Open Sans;
+			font-weight: bold;
 		}
 
 		.border-bawah{
@@ -56,40 +86,76 @@
 
 		.makasih{
 			text-align: center;
-			margin-top: 20px;
-			font-family: Roboto;
+			font-family: Open Sans;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 20px;
-			line-height: 18px;
+			font-size: 15px;
+			line-height: 20px;
 			color: #242424;
 		}
-	</style>
-</head>
-<body>
-
-<div class="wrapper">
-	<img src="image/atas.png" alt="">
-	<h1 class="judul">TIKET</h1>
-	<div class="box">
-		<td class="ml-5">
-			<!--			<?php foreach ($pesan as $item): ?>-->
-			<h4>TIKET MASUK</h4><br>
-			<p style="margin-top: -20px;">Status : <span class="acc">Diterima</span></p>
-			<!--			<?php endforeach; ?>-->
-			<!--			@foreach( $pakets as $paket )-->
-			<p style="margin-top: 20px">Nama Pemesan : Fahmi Bahtiar Adi Nugroho<br>
-				Jumlah Pengunjung : 5<br>
-				Asal Pengunjung : Demak<br>
-				Paket yang Dipilih : Paket Kunjungan 2<br>
-				Membayar Sebanyak : Rp150.000 ke<br>
-				Rekening : <a style="color: #5259AE;">0988737951936</a></p><br>
-			<!--			@endforeach-->
-			<p>Silahkan Cetak Tiket ini berbentuk pdf / simpan pesan ini untuk bukti bahwa anda telah melakukan pemesanan kunjungan</p><br>
-			<p class="makasih">Terima kasih telah berkunjung ke RUS Animation Studio</p>
-		</td>
-	</div>
-	<img class="border-bawah" src="image/bawah.png" alt="">
-</div>
-</body>
+		.service{
+			position: relative;
+			font-size: 13px;
+    		color: rgb(153, 146, 146);
+    		top: 1.8rem;
+    		left: 1.5rem;
+}
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <img src="image/atas.png" alt="">
+            <h1 class="judul">TIKET</h1>
+            <div class="box">
+                <td class="ml-5">
+                    <!--			<?php foreach ($pesan as $item): ?>-->
+                    <h4>TIKET MASUK</h4>
+                    <br>
+                    <p style="margin-top: -20px;" class="pesan">
+                        Status :
+                        <span class="acc">Diterima</span>
+                    </p>
+                    <!--			<?php endforeach; ?>-->
+                    <!--			@foreach( $pakets as $paket )-->
+                    <p class="pesan">
+                        Nama Pemesan :
+                        <span class="isi">Fahmi Bahtiar Adi Nugroho</span>
+                        <br>
+                        Jumlah Pengunjung :
+                        <span class="isi">5</span>
+                        <br>
+                        Asal Pengunjung :
+                        <span class="isi"> Demak</span>
+                        <br>
+                        Paket yang Dipilih :
+                        <span class="isi"> Paket Kunjungan 2</span>
+                        <br>
+                        Membayar Sebanyak :
+                        <span class="isi"> Rp150.000</span>
+                        <br>
+                        Status Transaksi :
+                        <span class="isi">
+                            <span class="tcc">SUDAH LUNAS</span>
+                        </span>
+                    </p>
+                    <!--			@endforeach-->
+                    <p class="pesan">Silahkan Cetak Tiket ini berbentuk pdf / simpan pesan ini untuk bukti bahwa anda telah melakukan pemesanan kunjungan</p>
+                    <br>
+                    <p class="makasih">
+                        Terima kasih telah berkunjung ke
+                        <br>
+                        RUS Animation Studio
+                    </p>
+                </td>
+            </div>
+            <img class="border-bawah" src="image/bawah.png" alt="">
+            <p class="d-flex service">
+                © Copyright
+                <script type="text/javascript">
+				document.write(new Date().getFullYear());
+                </script>
+                RPL RUS WEB DEV
+            </p>
+        </div>
+    </body>
 </html>

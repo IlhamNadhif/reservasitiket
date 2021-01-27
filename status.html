@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<!--	<link rel="stylesheet" href="style.css">-->
-	<title>INVOICE</title>
-	<style>
+    <head>
+        <meta charset="utf-8">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        >
+        <!--	<link rel="stylesheet" href="style.css">-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Courgette&display=swap" rel="stylesheet">
+        <title>INVOICE</title>
+        <style>
 		.wrapper{
 			position: relative;
 			width: 477px;
@@ -21,10 +34,10 @@
 			position: absolute;
 			right: 0;
 
-			font-family: Roboto;
+			font-family: Squada One;
 			font-style: normal;
 			font-weight: 500;
-			font-size: 24px;
+			font-size: 2.5rem;
 			line-height: 28px;
 			color: #FBB904;
 		}
@@ -43,44 +56,89 @@
 			bottom: 0;
 		}
 
+		.pesan{
+			margin-top: 20px;
+			font-family: Open Sans;
+			font-weight: bold;
+		}
+
+		.isi{
+			font-weight: normal;
+			font-family: Open Sans;
+		}
+
 		.makasih{
 			text-align: center;
 			margin-top: 20px;
-			font-family: Roboto;
+			font-family: Open Sans;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 20px;
-			line-height: 18px;
+			font-size: 15px;
+			line-height: 25px;
 			color: #242424;
 		}
-	</style>
-</head>
-<body>
-
-<div class="wrapper">
-	<img src="image/atas.png" alt="">
-	<h1 class="judul">INVOICE</h1>
-	<div class="box">
-		<td class="ml-5">
-			<!--			<?php foreach ($pesan as $item): ?>-->
-			<strong>Nama Pemesan :</strong> Fahmi Bahtiar Adi Nugroho<br>
-			<strong>Jumlah Pengunjung :</strong> 5<br>
-			<p>Kode Anda: <span style="color: #5259AE">EOIH99EF</span></p>
-			<p>Status : <span class="acc">Menunggu Pembayaran</span></p>
-			<!--			<?php endforeach; ?>-->
-			<strong>Keterangan Pembayaran:</strong>
-			<!--			@foreach( $pakets as $paket )-->
-			<p>Paket Yang Dibeli : paket 1<br>
-				Harga per orang : Rp.20000/orang<br>
-				Jumlah Pengunjung : 5 * 20000<br>
-				Total Pembayaran : <a>Rp.10.000</a><br>
-				Transfer ke Rekening <br> atas nama Fahmi : <a style="color: #5259AE;">0988737951936</a></p><br>
-			<!--			@endforeach-->
-			<a style="font-family: sans-serif;">Jika sudah membayar silahkan upluoad struktur pembayaran <a href="http://127.0.0.1:8000/codeVerification">disini</a></a><br>
-			<p class="makasih">Terima kasih telah berkunjung ke RUS Animation Studio</p>
-		</td>
-	</div>
-	<img class="border-bawah" src="image/bawah.png" alt="">
-</div>
-</body>
+		.service{
+			position: relative;
+			font-size: 13px;
+    		color: rgb(153, 146, 146);
+    		top: 0.4rem;
+			left: 1.5rem;
+		}
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <img src="image/atas.png" alt="">
+            <h1 class="judul">INVOICE</h1>
+            <div class="box">
+                <td class="ml-5">
+                    <!--			<?php foreach ($pesan as $item): ?>-->
+                    <strong class="pesan">Nama Pemesan :</strong> Fahmi Bahtiar Adi Nugroho
+                    <br>
+                    <strong class="pesan">Jumlah Pengunjung :</strong> 5
+                    <br>
+                    <p class="pesan">Kode Anda:
+                        <span style="color: #5259AE">EOIH99EF</span>
+                    </p>
+                    <p class="pesan">Status :
+                        <span class="acc">Menunggu Pembayaran</span>
+                    </p>
+                    <!--			<?php endforeach; ?>-->
+                    <strong>Keterangan Pembayaran:</strong>
+                    <!--			@foreach( $pakets as $paket )-->
+                    <p class="pesan"> Paket Yang Dibeli :<span class="isi"> Paket 1 </span>
+                        <br>
+                        Harga per orang : <span class="isi">Rp.20000/orang </span>
+                        <br>
+                        Jumlah Pengunjung : <span class="isi"> 5 * 20000 </span>
+                        <br>
+                        Total Pembayaran :
+                        <a class="isi">Rp.10.000</a>
+                        <br>
+                        Transfer ke OVO:
+                        <a style="color: #5259AE;" class="isi">0988737951936</a>
+                    </p>
+                
+                    <!--			@endforeach-->
+                    <a class="isi">Jika sudah membayar silahkan upload struktur pembayaran
+                        <a href="http://127.0.0.1:8000/codeVerification">disini</a>
+                    </a>
+                    <br>
+                    <p class="makasih">
+                        Terima kasih telah berkunjung ke
+                        <br>
+                       RUS Animation Studio 
+                    </p>
+                </td>
+            </div>
+            <img class="border-bawah" src="image/bawah.png" alt="">
+            <p class="d-flex service">
+                © Copyright
+                <script type="text/javascript">
+		document.write(new Date().getFullYear());
+                </script>
+                RPL RUS WEB DEV
+            </p>
+        </div>
+    </body>
 </html>
