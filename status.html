@@ -22,7 +22,7 @@
 		.wrapper{
 			position: relative;
 			width: 477px;
-			height: 621px;
+			height: 1075px;
 			margin: auto;
 			background: #fff;
 			box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
@@ -63,9 +63,19 @@
 		}
 
 		.isi{
+            margin-top: 80px;
 			font-weight: normal;
 			font-family: Open Sans;
 		}
+
+        .total{
+            position: absolute;
+            right: 0;
+            margin-right: 40px;
+        }
+        .bawah{
+            margin-top: 100px;
+        }
 
 		.makasih{
 			text-align: center;
@@ -108,27 +118,98 @@
                     <!--			@foreach( $pakets as $paket )-->
                     <p class="pesan"> Paket Yang Dibeli :<span class="isi"> Paket 1 </span>
                         <br>
-                        Harga per orang : <span class="isi">Rp.20000/orang </span>
-                        <br>
-                        Jumlah Pengunjung : <span class="isi"> 5 * 20000 </span>
-                        <br>
-                        Total Pembayaran :
-                        <a class="isi">Rp.10.000</a>
-                        <br>
                         Transfer ke OVO:
                         <a style="color: #5259AE;" class="isi">0988737951936</a>
                     </p>
-                
+                    <div class="row">
+                        <div class="col">
+                            <table class="table table-sm">
+                                <tr>
+                                    <th>NO.</th>
+                                    <th>ITEM DESCRIPTION</th>
+                                    <th>PRICE</th>
+                                </tr>
+                                <!--                            @foreach ($history as $index=>$item)-->
+                                <tr>
+                                    <td>1</td>
+                                    <td>Pelatihan UI/UX</td>
+                                    <td>Rp10.000</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Pelatihan Sablo</td>
+                                    <td>Rp10.000</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Pelatihan Design Grafis</td>
+                                    <td>Rp10.000</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Pelatihan Ilustrasi</td>
+                                    <td>Rp10.000</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Pelatihan Motion Grafik</td>
+                                    <td>Rp10.000</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Pelatihan Modelling 3D</td>
+                                    <td>Rp10.000</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Pelatihan Pembuatan Aplikasi</td>
+                                    <td>Rp10.000</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Nonton Sejarah SMK RUS</td>
+                                    <td>Rp10.000</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Roomtour SMK RUS</td>
+                                    <td>Rp10.000</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Pemberian Souvenir</td>
+                                    <td>Rp10.000</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Pemberian Snack</td>
+                                    <td>Rp10.000</td>
+                                </tr>
+                                <!--                            @endforeach-->
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="total">
+                        <p class="pesan">
+                            Subtotal :<span class="isi"> Rp110.000 </span><br>
+                            Total Pengunjung :<span class="isi"> 5 </span><br>
+                            Total :<span class="isi"> Rp550.000 </span>
+                        </p>
+                    </div>
+
                     <!--			@endforeach-->
-                    <a class="isi">Jika sudah membayar silahkan upload struktur pembayaran
-                        <a href="http://127.0.0.1:8000/codeVerification">disini</a>
-                    </a>
-                    <br>
-                    <p class="makasih">
-                        Terima kasih telah berkunjung ke
+                    <div class="bawah">
+                        <a class="isi">Jika sudah membayar silahkan upload struktur pembayaran
+                            <a href="http://127.0.0.1:8000/codeVerification">disini</a>
+                        </a>
                         <br>
-                       RUS Animation Studio 
-                    </p>
+                        <p class="makasih">
+                            Terima kasih telah berkunjung ke
+                            <br>
+                            RUS Animation Studio
+                        </p>
+                    </div>
                 </td>
             </div>
             <img class="border-bawah" src="image/bawah.png" alt="">
