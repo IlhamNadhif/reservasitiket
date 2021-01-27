@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--	<link rel="stylesheet" href="style.css">-->
+	<title>TIKET</title>
+	<style>
+		.wrapper{
+			position: relative;
+			width: 477px;
+			height: 621px;
+			margin: auto;
+			background: #fff;
+			box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+		}
+
+		.judul{
+			margin-top: -40px;
+			margin-right: 55px;
+			position: absolute;
+			right: 0;
+
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 28px;
+			color: #FBB904;
+		}
+
+		.acc{
+			padding: 4px 15px;
+			background: #20B2AA;
+			color: #fff;
+		}
+
+		.box{
+			margin-top: 10px;
+			padding: 15px 25px;
+		}
+
+		.box h4{
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 21px;
+			color: #242424;
+		}
+
+		.border-bawah{
+			position: absolute;
+			bottom: 0;
+		}
+
+		.makasih{
+			text-align: center;
+			margin-top: 20px;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 18px;
+			color: #242424;
+		}
+	</style>
+</head>
+<body>
+
+<div class="wrapper">
+	<img src="image/atas.png" alt="">
+	<h1 class="judul">TIKET</h1>
+	<div class="box">
+		<td class="ml-5">
+			<!--			<?php foreach ($pesan as $item): ?>-->
+			<h4>TIKET MASUK</h4><br>
+			<p style="margin-top: -20px;">Status : <span class="acc">Diterima</span></p>
+			<!--			<?php endforeach; ?>-->
+			<!--			@foreach( $pakets as $paket )-->
+			<p style="margin-top: 20px">Nama Pemesan : Fahmi Bahtiar Adi Nugroho<br>
+				Jumlah Pengunjung : 5<br>
+				Asal Pengunjung : Demak<br>
+				Paket yang Dipilih : Paket Kunjungan 2<br>
+				Membayar Sebanyak : Rp150.000 ke<br>
+				Rekening : <a style="color: #5259AE;">0988737951936</a></p><br>
+			<!--			@endforeach-->
+			<p>Silahkan Cetak Tiket ini berbentuk pdf / simpan pesan ini untuk bukti bahwa anda telah melakukan pemesanan kunjungan</p><br>
+			<p class="makasih">Terima kasih telah berkunjung ke RUS Animation Studio</p>
+		</td>
+	</div>
+	<img class="border-bawah" src="image/bawah.png" alt="">
+</div>
+</body>
+</html>

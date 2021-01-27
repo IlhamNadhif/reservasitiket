@@ -3,19 +3,69 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-	<title>form</title>
+<!--	<link rel="stylesheet" href="style.css">-->
+	<title>INVOICE</title>
+	<style>
+		.wrapper{
+			position: relative;
+			width: 477px;
+			height: 621px;
+			margin: auto;
+			background: #fff;
+			box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+		}
+
+		.judul{
+			margin-top: -40px;
+			margin-right: 40px;
+			position: absolute;
+			right: 0;
+
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 28px;
+			color: #FBB904;
+		}
+
+		.acc{
+			padding: 4px 15px;
+			background: #FBB904;
+			color: #fff;
+		}
+
+		.box{
+			padding: 15px 25px;
+		}
+		.border-bawah{
+			position: absolute;
+			bottom: 0;
+		}
+
+		.makasih{
+			text-align: center;
+			margin-top: 20px;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 18px;
+			color: #242424;
+		}
+	</style>
 </head>
 <body>
 
 <div class="wrapper">
-	<img src="image/Component%202.png" alt="">
+	<img src="image/atas.png" alt="">
+	<h1 class="judul">INVOICE</h1>
 	<div class="box">
 		<td class="ml-5">
 			<!--			<?php foreach ($pesan as $item): ?>-->
 			<strong>Nama Pemesan :</strong> Fahmi Bahtiar Adi Nugroho<br>
 			<strong>Jumlah Pengunjung :</strong> 5<br>
-			<p>Kode Anda: <span style="color:  #39569c">EOIH99EF</span></p>
+			<p>Kode Anda: <span style="color: #5259AE">EOIH99EF</span></p>
 			<p>Status : <span class="acc">Menunggu Pembayaran</span></p>
 			<!--			<?php endforeach; ?>-->
 			<strong>Keterangan Pembayaran:</strong>
@@ -24,13 +74,13 @@
 				Harga per orang : Rp.20000/orang<br>
 				Jumlah Pengunjung : 5 * 20000<br>
 				Total Pembayaran : <a>Rp.10.000</a><br>
-				Transfer ke Rekening <br> atas nama Fahmi : <a style="color: #39569c;">0988737951936</a></p><br>
+				Transfer ke Rekening <br> atas nama Fahmi : <a style="color: #5259AE;">0988737951936</a></p><br>
 			<!--			@endforeach-->
 			<a style="font-family: sans-serif;">Jika sudah membayar silahkan upluoad struktur pembayaran <a href="http://127.0.0.1:8000/codeVerification">disini</a></a><br>
 			<p class="makasih">Terima kasih telah berkunjung ke RUS Animation Studio</p>
 		</td>
 	</div>
-	<img class="border-bawah" src="image/Component%203.png" alt="">
+	<img class="border-bawah" src="image/bawah.png" alt="">
 </div>
 </body>
 </html>
