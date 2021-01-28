@@ -8,7 +8,7 @@
 }
 
 .judul{
-    margin-top: -70px;
+    margin-top: -90px;
     margin-right: 50px;
     position: absolute;
     right: 0;
@@ -42,6 +42,12 @@
     line-height: 19px;
     text-align: right;
     color: #000000;
+}
+
+.detail_pengunjung{
+    padding: 4px ;
+    color:black;
+    background: rgb(201, 201, 201);
 }
 
 .acc{
@@ -82,11 +88,9 @@
 .total{
     position: absolute;
     right: 0;
-    margin-right: 40px;
+    margin-right: 100px;
 }
-.bawah{
-    margin-top: 100px;
-}
+
 
 .makasih{
     text-align: center;
@@ -98,11 +102,12 @@
     line-height: 25px;
     color: #242424;
 }
-.service{
+.service {
+    bottom: 0;
     position: relative;
-    font-size: 13px;
+    font-size: 18px;
     color: rgb(153, 146, 146);
-    top: 0.4rem;
+    top:8rem;
     left: 1.5rem;
 }
 
@@ -112,6 +117,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
+    padding-top: 15px;
     line-height: 33px;
     color: #000000;
 }

@@ -58,20 +58,21 @@
     bottom: 0;
 }
 
-/*.makasih{*/
-/*    text-align: center;*/
-/*    font-family: Open Sans;*/
-/*    font-style: normal;*/
-/*    font-weight: bold;*/
-/*    font-size: 15px;*/
-/*    line-height: 20px;*/
-/*    color: #242424;*/
-/*}*/
-.service{
+.makasih{
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #242424;
+}
+.service {
+    bottom: 0;
     position: relative;
-    font-size: 13px;
+    font-size: 18px;
     color: rgb(153, 146, 146);
-    top: 0.4rem;
+    top: 1.5rem;
     left: 1.5rem;
 }
 
