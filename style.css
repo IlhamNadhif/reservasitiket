@@ -1,0 +1,77 @@
+.wrapper{
+    position: relative;
+    width: 793.7px;
+    height: 1247.2px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+}
+
+.judul{
+    margin-top: -70px;
+    margin-right: 100px;
+    position: absolute;
+    right: 0;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    color: #96D0FE;
+}
+
+.acc{
+    padding: 4px 15px;
+    background: #20B2AA;
+    color: #fff;
+    font-weight: normal;
+}
+
+.isi{
+    font-weight: normal;
+}
+
+.box{
+    margin-top: 20px;
+    padding: 15px 25px;
+}
+
+.box h4{
+    font-family: Squada One;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    height: 3rem;
+    line-height: 21px;
+    color: #242424;
+}
+
+.pesan{
+    margin-top: 20px;
+    font-family: Open Sans;
+    font-weight: bold;
+}
+
+.border-bawah{
+    position: absolute;
+    bottom: 0;
+}
+
+.makasih{
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #242424;
+}
+.service {
+    bottom: 0;
+    position: relative;
+    font-size: 18px;
+    color: rgb(153, 146, 146);
+    top: 1.8rem;
+    left: 1.5rem;
+}
