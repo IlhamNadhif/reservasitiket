@@ -8,7 +8,7 @@
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
             crossorigin="anonymous"
         >
-        <!--	<link rel="stylesheet" href="style.css">-->
+        	<link rel="stylesheet" href="style-invoice.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,109 +18,42 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Courgette&display=swap" rel="stylesheet">
         <title>INVOICE</title>
-        <style>
-		.wrapper{
-			position: relative;
-			width: 477px;
-			height: 1075px;
-			margin: auto;
-			background: #fff;
-			box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
-		}
-
-		.judul{
-			margin-top: -40px;
-			margin-right: 40px;
-			position: absolute;
-			right: 0;
-
-			font-family: Squada One;
-			font-style: normal;
-			font-weight: 500;
-			font-size: 2.5rem;
-			line-height: 28px;
-			color: #FBB904;
-		}
-
-		.acc{
-			padding: 4px 15px;
-			background: #FBB904;
-			color: #fff;
-		}
-
-		.box{
-			padding: 15px 25px;
-		}
-		.border-bawah{
-			position: absolute;
-			bottom: 0;
-		}
-
-		.pesan{
-			margin-top: 20px;
-			font-family: Open Sans;
-			font-weight: bold;
-		}
-
-		.isi{
-            margin-top: 80px;
-			font-weight: normal;
-			font-family: Open Sans;
-		}
-
-        .total{
-            position: absolute;
-            right: 0;
-            margin-right: 40px;
-        }
-        .bawah{
-            margin-top: 100px;
-        }
-
-		.makasih{
-			text-align: center;
-			margin-top: 20px;
-			font-family: Open Sans;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 15px;
-			line-height: 25px;
-			color: #242424;
-		}
-		.service{
-			position: relative;
-			font-size: 13px;
-    		color: rgb(153, 146, 146);
-    		top: 0.4rem;
-			left: 1.5rem;
-		}
-        </style>
     </head>
     <body>
         <div class="wrapper">
             <img src="image/atas.png" alt="">
-            <h1 class="judul">INVOICE</h1>
+            <div class="judul">
+                <h1>INVOICE</h1>
+                <p>Pembayaran Paket Custom</p>
+                <h6>Visit SMK RUS</h6>
+            </div>
             <div class="box">
                 <td class="ml-5">
                     <!--			<?php foreach ($pesan as $item): ?>-->
-                    <strong class="pesan">Nama Pemesan :</strong> Fahmi Bahtiar Adi Nugroho
-                    <br>
-                    <strong class="pesan">Jumlah Pengunjung :</strong> 5
-                    <br>
-                    <p class="pesan">Kode Anda:
-                        <span style="color: #5259AE">EOIH99EF</span>
-                    </p>
-                    <p class="pesan">Status :
-                        <span class="acc">Menunggu Pembayaran</span>
-                    </p>
-                    <!--			<?php endforeach; ?>-->
-                    <strong>Keterangan Pembayaran:</strong>
-                    <!--			@foreach( $pakets as $paket )-->
-                    <p class="pesan"> Paket Yang Dibeli :<span class="isi"> Paket Custom </span>
+                    <div class="user">
+                        <strong class="pesan">Nama Pemesan :</strong> Fahmi Bahtiar Adi Nugroho
                         <br>
-                        Transfer ke OVO:
-                        <a style="color: #5259AE;" class="isi">0988737951936</a>
-                    </p>
+                        <strong class="pesan">Paket yang Dipilih</strong> Paket Custom
+                        <br>
+                        <strong class="pesan">Jumlah Pengunjung :</strong> 5
+                        <br>
+                        <p class="pesan">Kode Anda:
+                            <span style="color: #5259AE">EOIH99EF</span>
+                        </p>
+                        <p class="pesan">Status :
+                            <span class="acc">Menunggu Pembayaran</span>
+                        </p>
+                    </div>
+                    <!--			<?php endforeach; ?>-->
+                    <!--			@foreach( $pakets as $paket )-->
+                    <div class="pembayaran">
+                        <strong>Keterangan Pembayaran:</strong>
+                        <p class="pesan">
+                            Transfer ke OVO:
+                            <a style="color: #5259AE;" class="isi">0988737951936</a>
+                        </p>
+                    </div>
+                    <h1 class="detail">DETAIL PAKET :</h1>
                     <div class="row">
                         <div class="col">
                             <table class="table table-sm">
@@ -203,12 +136,12 @@
                         <a class="isi">Jika sudah membayar silahkan upload struktur pembayaran
                             <a href="http://127.0.0.1:8000/codeVerification">disini</a>
                         </a>
-                        <br>
-                        <p class="makasih">
-                            Terima kasih telah berkunjung ke
-                            <br>
-                            RUS Animation Studio
-                        </p>
+<!--                        <br>-->
+<!--                        <p class="makasih">-->
+<!--                            Terima kasih telah berkunjung ke-->
+<!--                            <br>-->
+<!--                            RUS Animation Studio-->
+<!--                        </p>-->
                     </div>
                 </td>
             </div>

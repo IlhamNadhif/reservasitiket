@@ -58,20 +58,29 @@
     bottom: 0;
 }
 
-.makasih{
+/*.makasih{*/
+/*    text-align: center;*/
+/*    font-family: Open Sans;*/
+/*    font-style: normal;*/
+/*    font-weight: bold;*/
+/*    font-size: 15px;*/
+/*    line-height: 20px;*/
+/*    color: #242424;*/
+/*}*/
+.service{
+    position: relative;
+    font-size: 13px;
+    color: rgb(153, 146, 146);
+    top: 0.4rem;
+    left: 1.5rem;
+}
+
+.detail{
     text-align: center;
     font-family: Open Sans;
     font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 20px;
-    color: #242424;
-}
-.service {
-    bottom: 0;
-    position: relative;
-    font-size: 18px;
-    color: rgb(153, 146, 146);
-    top: 1.8rem;
-    left: 1.5rem;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
 }

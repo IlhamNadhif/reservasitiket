@@ -1,0 +1,117 @@
+.wrapper{
+    position: relative;
+    width: 793.7px;
+    height: 1247.2px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+}
+
+.judul{
+    margin-top: -70px;
+    margin-right: 50px;
+    position: absolute;
+    right: 0;
+}
+
+.judul h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    color: #96D0FE;
+}
+
+.judul p{
+    margin-top: -10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    color: #000000;
+}
+
+.judul h6{
+    margin-top: -10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 19px;
+    text-align: right;
+    color: #000000;
+}
+
+.acc{
+    padding: 4px 15px;
+    background: #FBB904;
+    color: #fff;
+}
+
+.box{
+    margin-top: 50px;
+    padding: 15px 25px;
+}
+
+.border-bawah{
+    position: absolute;
+    bottom: 0;
+}
+
+.pembayaran{
+    margin-right: 50px;
+    margin-top: -180px;
+    position: absolute;
+    right: 0;
+}
+
+.pesan{
+    margin-top: 20px;
+    font-family: Open Sans;
+    font-weight: bold;
+}
+
+.isi{
+    margin-top: 80px;
+    font-weight: normal;
+    font-family: Open Sans;
+}
+
+.total{
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+}
+.bawah{
+    margin-top: 100px;
+}
+
+.makasih{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: #242424;
+}
+.service{
+    position: relative;
+    font-size: 13px;
+    color: rgb(153, 146, 146);
+    top: 0.4rem;
+    left: 1.5rem;
+}
+
+.detail{
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
